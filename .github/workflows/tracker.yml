@@ -2,11 +2,16 @@ name: Indodax Auto Tracker
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
-  workflow_dispatch:
+    - cron: '*/5 * * * *' # Jalan otomatis tiap 5 menit
+  workflow_dispatch: # Boleh dijalankan manual
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  build-and-scan:
+  scan-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -15,19 +20,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '18'
 
       - name: Install Dependencies
         run: npm install axios
 
-      - name: Run Indodax Scanner
+      - name: Run Scanner
         run: node scanner.js
 
-      - name: Save & Commit Results
+      - name: Commit & Push Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add signals.json
-          git commit -m "Auto update signals [skip ci]" || exit 0
-          git pull --rebase origin main
+          git commit -m "Auto-update signals.json" || exit 0
           git push
