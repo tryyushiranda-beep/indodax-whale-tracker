@@ -1,85 +1,122 @@
 const axios = require('axios');
 const fs = require('fs');
 
-function formatRupiahVolume(vol) {
-  if (vol >= 1000000000) {
-    return `Rp ${(vol / 1000000000).toFixed(2)} Miliar`;
-  } else {
-    return `Rp ${(vol / 1000000).toFixed(0)} Juta`;
+// Format nominal Rupiah agar enak dibaca (Juta / Miliar)
+function formatRupiah(amount) {
+  if (amount >= 1000000000) {
+    return `Rp ${(amount / 1000000000).toFixed(2)} Miliar`;
   }
+  return `Rp ${(amount / 1000000).toFixed(1)} Juta`;
 }
 
-async function scan() {
+async function scanPair(pair, tickerData) {
+  const coinName = pair.replace('_idr', '').toUpperCase();
+  const lastPrice = parseFloat(tickerData.last);
+  const total24hVol = parseFloat(tickerData.vol_idr);
+
   try {
-    const summaryRes = await axios.get('https://indodax.com/api/summaries');
+    // Ambil 30 transaksi terbaru untuk analisis mendalam
+    const response = await axios.get(`https://indodax.com/api/trades/${pair}`, { timeout: 4000 });
+    const trades = response.data;
+
+    if (!Array.isArray(trades) || trades.length === 0) return null;
+
+    let totalRecentBuyVal = 0;
+    let maxSingleBuyVal = 0;
+    let buyCount = 0;
+    let latestBuyTimestamp = null;
+
+    for (let trade of trades.slice(0, 25)) {
+      if (trade.type === 'buy') {
+        const price = parseFloat(trade.price);
+        const amount = parseFloat(trade.amount);
+        const valIDR = price * amount;
+
+        totalRecentBuyVal += valIDR;
+        buyCount++;
+
+        if (valIDR > maxSingleBuyVal) {
+          maxSingleBuyVal = valIDR;
+          latestBuyTimestamp = parseInt(trade.date) * 1000;
+        }
+      }
+    }
+
+    // PARAMETER SENSITIVITAS & AKURASI PAUS
+    const THRESHOLD_SINGLE_BUY = 15000000; // Minimal 1x Instant Buy Rp 15 Juta
+    const THRESHOLD_ACCUMULATION = 25000000; // Minimal Total Serok Rp 25 Juta
+
+    const isInstantWhale = maxSingleBuyVal >= THRESHOLD_SINGLE_BUY;
+    const isAccumulationWhale = totalRecentBuyVal >= THRESHOLD_ACCUMULATION && buyCount >= 2;
+
+    if (isInstantWhale || isAccumulationWhale) {
+      const timeString = latestBuyTimestamp
+        ? new Date(latestBuyTimestamp).toLocaleTimeString('id-ID', { timeZone: 'Asia/Jakarta' })
+        : new Date().toLocaleTimeString('id-ID', { timeZone: 'Asia/Jakarta' });
+
+      let signalType = '';
+      let message = '';
+      let triggerVal = 0;
+
+      if (isInstantWhale && maxSingleBuyVal >= totalRecentBuyVal * 0.7) {
+        signalType = 'WHALE_INSTANT_BUY';
+        triggerVal = maxSingleBuyVal;
+        message = `Paus melakukan Market BUY instan sebesar ${formatRupiah(maxSingleBuyVal)}!`;
+      } else {
+        signalType = 'WHALE_SEROK';
+        triggerVal = totalRecentBuyVal;
+        message = `Terdeteksi akumulasi serok halus total ${formatRupiah(totalRecentBuyVal)} (${buyCount} transaksi buy)!`;
+      }
+
+      return {
+        id: pair,
+        coin: `${coinName}/IDR`,
+        price: `Rp ${lastPrice.toLocaleString('id-ID')}`,
+        change: `${formatRupiah(triggerVal)}`,
+        volume: formatRupiah(total24hVol),
+        rawTriggerVal: triggerVal,
+        status: 'WHALE_BUY',
+        message: message,
+        timestamp: timeString
+      };
+    }
+  } catch (err) {
+    // Abaikan jika terjadi timeout/rate limit ringan pada koin tertentu
+    return null;
+  }
+  return null;
+}
+
+async function startScan() {
+  console.log('Memulai Pemindaian Paus Indodax Akurat...');
+
+  try {
+    const summaryRes = await axios.get('https://indodax.com/api/summaries', { timeout: 6000 });
     const tickers = summaryRes.data.tickers;
 
-    let whaleSignals = [];
-    const ignoredCoins = ['USDT', 'USDC', 'BTC'];
-
-    // Ambil daftar pair aktif dengan volume memadai
-    const pairs = Object.keys(tickers).filter(pair => {
+    // Filter koin valid (Bukan stablecoin & Volume 24j harian min Rp 100 Juta)
+    const ignored = ['USDT', 'USDC'];
+    const validPairs = Object.keys(tickers).filter(pair => {
       const coinName = pair.replace('_idr', '').toUpperCase();
-      return pair.endsWith('_idr') && !ignoredCoins.includes(coinName) && parseFloat(tickers[pair].vol_idr) >= 100000000;
+      const vol24h = parseFloat(tickers[pair].vol_idr);
+      return pair.endsWith('_idr') && !ignored.includes(coinName) && vol24h >= 100000000;
     });
 
-    // Pindai riwayat transaksi terbaru (trade history) untuk setiap pair
-    for (let pair of pairs) {
-      const coinName = pair.replace('_idr', '').toUpperCase();
-      const lastPrice = parseFloat(tickers[pair].last);
+    // Jalankan pemindaian secara paralel (eksekusi cepat agar data akurat)
+    const scanPromises = validPairs.map(pair => scanPair(pair, tickers[pair]));
+    const results = await Promise.all(scanPromises);
 
-      try {
-        const tradeRes = await axios.get(`https://indodax.com/api/trades/${pair}`);
-        const trades = tradeRes.data;
+    // Filter hasil null dan urutkan dari transaksi paus terbesar
+    const detectedSignals = results
+      .filter(item => item !== null)
+      .sort((a, b) => b.rawTriggerVal - a.rawTriggerVal)
+      .map(({ rawTriggerVal, ...rest }) => rest);
 
-        if (Array.isArray(trades)) {
-          // Filter transaksi jenis 'buy' bernilai tunggal besar (misal >= Rp 25 Juta dalam 1 transaksi)
-          const WHALE_THRESHOLD_IDR = 25000000; 
-
-          for (let trade of trades.slice(0, 15)) { // Cek 15 transaksi terakhir
-            const price = parseFloat(trade.price);
-            const amountCoin = parseFloat(trade.amount);
-            const totalValueIDR = price * amountCoin;
-
-            if (trade.type === 'buy' && totalValueIDR >= WHALE_THRESHOLD_IDR) {
-              whaleSignals.push({
-                id: pair,
-                coin: coinName + '/IDR',
-                price: `Rp ${price.toLocaleString('id-ID')}`,
-                change: `Order Jumbo: ${formatRupiahVolume(totalValueIDR)}`,
-                volume: formatRupiahVolume(parseFloat(tickers[pair].vol_idr)),
-                rawVal: totalValueIDR,
-                status: 'WHALE_BUY',
-                message: `Paus melakukan BUY instan senilai ${formatRupiahVolume(totalValueIDR)} di harga Rp ${price.toLocaleString('id-ID')}!`,
-                timestamp: new Date(parseInt(trade.date) * 1000).toLocaleTimeString('id-ID', { timeZone: 'Asia/Jakarta' })
-              });
-            }
-          }
-        }
-      } catch (e) {
-        // Abaikan error rate limit per pair
-      }
-    }
-
-    // Urutkan sinyal berdasarkan nilai transaksi paus terbesar
-    whaleSignals.sort((a, b) => b.rawVal - a.rawVal);
-
-    // Hilangkan duplikasi pair dan ambil sinyal paus terbesar
-    const uniqueSignals = [];
-    const seenPairs = new Set();
-    for (let item of whaleSignals) {
-      if (!seenPairs.has(item.id)) {
-        seenPairs.add(item.id);
-        const { rawVal, ...rest } = item;
-        uniqueSignals.push(rest);
-      }
-    }
-
-    fs.writeFileSync('signals.json', JSON.stringify(uniqueSignals, null, 2));
-    console.log(`Scan selesai. Eksekusi paus ditemukan: ${uniqueSignals.length}`);
+    fs.writeFileSync('signals.json', JSON.stringify(detectedSignals, null, 2));
+    console.log(`Pemindaian selesai! Sinyal paus terkonfirmasi: ${detectedSignals.length}`);
   } catch (error) {
-    console.error('Gagal memindai transaksi paus:', error.message);
+    console.error('Gagal menjalankan pemindai:', error.message);
   }
 }
 
-scan();
+startScan();
