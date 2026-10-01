@@ -1,1312 +1,422 @@
 [
   {
-    "id": "usdt_idr",
-    "coin": "USDT/IDR",
-    "price": "Rp 17.915",
-    "change": "+0.00%",
-    "volume": "Rp 286.35 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
     "id": "xrp_idr",
     "coin": "XRP/IDR",
-    "price": "Rp 26.971",
-    "change": "+0.00%",
-    "volume": "Rp 14.93 Miliar",
+    "price": "Rp 26.965",
+    "change": "+1.52% dari Low",
+    "volume": "Rp 14.60 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "nova_idr",
-    "coin": "NOVA/IDR",
-    "price": "Rp 24.009",
-    "change": "+0.00%",
-    "volume": "Rp 13.41 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "hype_idr",
-    "coin": "HYPE/IDR",
-    "price": "Rp 1.589.537",
-    "change": "+0.00%",
-    "volume": "Rp 9.62 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "eth_idr",
-    "coin": "ETH/IDR",
-    "price": "Rp 48.489.000",
-    "change": "+0.00%",
-    "volume": "Rp 8.45 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "sol_idr",
     "coin": "SOL/IDR",
-    "price": "Rp 2.133.766",
-    "change": "+0.00%",
+    "price": "Rp 2.135.793",
+    "change": "+1.70% dari Low",
     "volume": "Rp 8.26 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
-    "id": "qnt_idr",
-    "coin": "QNT/IDR",
-    "price": "Rp 5.234.992",
-    "change": "+0.00%",
-    "volume": "Rp 6.48 Miliar",
+    "id": "eth_idr",
+    "coin": "ETH/IDR",
+    "price": "Rp 48.486.000",
+    "change": "+2.07% dari Low",
+    "volume": "Rp 8.20 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "aster_idr",
     "coin": "ASTER/IDR",
     "price": "Rp 13.587",
-    "change": "+0.00%",
+    "change": "+2.52% dari Low",
     "volume": "Rp 5.76 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "fartcoin_idr",
     "coin": "FARTCOIN/IDR",
-    "price": "Rp 3.189",
-    "change": "+0.00%",
-    "volume": "Rp 5.42 Miliar",
+    "price": "Rp 3.191",
+    "change": "+2.60% dari Low",
+    "volume": "Rp 5.47 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "usdc_idr",
-    "coin": "USDC/IDR",
-    "price": "Rp 17.908",
-    "change": "+0.00%",
-    "volume": "Rp 4.81 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "cst_idr",
-    "coin": "CST/IDR",
-    "price": "Rp 351.789",
-    "change": "+0.00%",
-    "volume": "Rp 3.80 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "pippin_idr",
-    "coin": "PIPPIN/IDR",
-    "price": "Rp 336,506",
-    "change": "+0.00%",
-    "volume": "Rp 3.71 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "pepe_idr",
     "coin": "PEPE/IDR",
-    "price": "Rp 0,079",
-    "change": "+0.00%",
-    "volume": "Rp 3.47 Miliar",
+    "price": "Rp 0,078",
+    "change": "+3.16% dari Low",
+    "volume": "Rp 3.46 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "ondo_idr",
-    "coin": "ONDO/IDR",
-    "price": "Rp 9.169",
-    "change": "+0.00%",
-    "volume": "Rp 3.28 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "soon_idr",
-    "coin": "SOON/IDR",
-    "price": "Rp 8.091",
-    "change": "+0.00%",
-    "volume": "Rp 2.88 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "doge_idr",
-    "coin": "DOGE/IDR",
-    "price": "Rp 1.714",
-    "change": "+0.00%",
-    "volume": "Rp 2.79 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "sui_idr",
     "coin": "SUI/IDR",
-    "price": "Rp 20.957",
-    "change": "+0.00%",
-    "volume": "Rp 2.58 Miliar",
+    "price": "Rp 21.027",
+    "change": "+3.32% dari Low",
+    "volume": "Rp 2.56 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "pengu_idr",
-    "coin": "PENGU/IDR",
-    "price": "Rp 176,62",
-    "change": "+0.00%",
-    "volume": "Rp 2.09 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "near_idr",
-    "coin": "NEAR/IDR",
-    "price": "Rp 97.364",
-    "change": "+0.00%",
-    "volume": "Rp 2.07 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "aih_idr",
-    "coin": "AIH/IDR",
-    "price": "Rp 8.467",
-    "change": "+0.00%",
-    "volume": "Rp 2.06 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "ada_idr",
-    "coin": "ADA/IDR",
-    "price": "Rp 4.527",
-    "change": "+0.00%",
-    "volume": "Rp 1.85 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "hbar_idr",
     "coin": "HBAR/IDR",
-    "price": "Rp 1.908",
-    "change": "+0.00%",
+    "price": "Rp 1.901",
+    "change": "+2.81% dari Low",
     "volume": "Rp 1.84 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "anoa_idr",
-    "coin": "ANOA/IDR",
-    "price": "Rp 227.998",
-    "change": "+0.00%",
-    "volume": "Rp 1.77 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "kite_idr",
-    "coin": "KITE/IDR",
-    "price": "Rp 2.591",
-    "change": "+0.00%",
-    "volume": "Rp 1.71 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "xaut_idr",
     "coin": "XAUT/IDR",
     "price": "Rp 75.139.007",
-    "change": "+0.00%",
+    "change": "+0.79% dari Low",
     "volume": "Rp 1.59 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "cast_idr",
-    "coin": "CAST/IDR",
-    "price": "Rp 4.899.999",
-    "change": "+0.00%",
-    "volume": "Rp 1.49 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "useless_idr",
-    "coin": "USELESS/IDR",
-    "price": "Rp 4.327",
-    "change": "+0.00%",
-    "volume": "Rp 1.49 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "zen_idr",
-    "coin": "ZEN/IDR",
-    "price": "Rp 264.886",
-    "change": "+0.00%",
-    "volume": "Rp 1.49 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "ena_idr",
-    "coin": "ENA/IDR",
-    "price": "Rp 4.885",
-    "change": "+0.00%",
-    "volume": "Rp 1.32 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "link_idr",
     "coin": "LINK/IDR",
-    "price": "Rp 261.393",
-    "change": "+0.00%",
-    "volume": "Rp 1.28 Miliar",
+    "price": "Rp 260.000",
+    "change": "+3.05% dari Low",
+    "volume": "Rp 1.29 Miliar",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "vex_idr",
-    "coin": "VEX/IDR",
-    "price": "Rp 39",
-    "change": "+0.00%",
-    "volume": "Rp 1.10 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "asetqu_idr",
-    "coin": "ASETQU/IDR",
-    "price": "Rp 209.418",
-    "change": "+0.00%",
-    "volume": "Rp 1.05 Miliar",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "bnb_idr",
     "coin": "BNB/IDR",
-    "price": "Rp 13.808.394",
-    "change": "+0.00%",
-    "volume": "Rp 958 Juta",
+    "price": "Rp 13.766.726",
+    "change": "+1.91% dari Low",
+    "volume": "Rp 957 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "sign_idr",
-    "coin": "SIGN/IDR",
-    "price": "Rp 222",
-    "change": "+0.00%",
-    "volume": "Rp 953 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "wld_idr",
-    "coin": "WLD/IDR",
-    "price": "Rp 9.572",
-    "change": "+0.00%",
-    "volume": "Rp 890 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "beat_idr",
     "coin": "BEAT/IDR",
-    "price": "Rp 1.641",
-    "change": "+0.00%",
-    "volume": "Rp 879 Juta",
+    "price": "Rp 1.647",
+    "change": "+3.20% dari Low",
+    "volume": "Rp 880 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "neon_idr",
     "coin": "NEON/IDR",
-    "price": "Rp 535",
-    "change": "+0.00%",
-    "volume": "Rp 850 Juta",
+    "price": "Rp 515",
+    "change": "+0.39% dari Low",
+    "volume": "Rp 853 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "br_idr",
-    "coin": "BR/IDR",
-    "price": "Rp 12.600",
-    "change": "+0.00%",
-    "volume": "Rp 843 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "pm_idr",
-    "coin": "PM/IDR",
-    "price": "Rp 30.216",
-    "change": "+0.00%",
-    "volume": "Rp 840 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "toshi_idr",
-    "coin": "TOSHI/IDR",
-    "price": "Rp 3,579",
-    "change": "+0.00%",
-    "volume": "Rp 803 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "paxg_idr",
     "coin": "PAXG/IDR",
-    "price": "Rp 75.302.587",
-    "change": "+0.00%",
+    "price": "Rp 75.102.588",
+    "change": "+0.67% dari Low",
     "volume": "Rp 774 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "okusd_idr",
     "coin": "OKUSD/IDR",
-    "price": "Rp 17.903",
-    "change": "+0.00%",
-    "volume": "Rp 767 Juta",
+    "price": "Rp 17.902",
+    "change": "+0.58% dari Low",
+    "volume": "Rp 771 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "ltc_idr",
     "coin": "LTC/IDR",
     "price": "Rp 1.210.000",
-    "change": "+0.00%",
-    "volume": "Rp 767 Juta",
+    "change": "+2.46% dari Low",
+    "volume": "Rp 763 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "cng_idr",
-    "coin": "CNG/IDR",
-    "price": "Rp 3.475",
-    "change": "+0.00%",
-    "volume": "Rp 759 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "mubarak_idr",
     "coin": "MUBARAK/IDR",
     "price": "Rp 1.069,384",
-    "change": "+0.00%",
+    "change": "+2.02% dari Low",
     "volume": "Rp 740 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "uai_idr",
     "coin": "UAI/IDR",
     "price": "Rp 5.285",
-    "change": "+0.00%",
-    "volume": "Rp 735 Juta",
+    "change": "+3.32% dari Low",
+    "volume": "Rp 733 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "nom_idr",
-    "coin": "NOM/IDR",
-    "price": "Rp 41,382",
-    "change": "+0.00%",
-    "volume": "Rp 695 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "skyai_idr",
-    "coin": "SKYAI/IDR",
-    "price": "Rp 772",
-    "change": "+0.00%",
-    "volume": "Rp 687 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "avax_idr",
     "coin": "AVAX/IDR",
-    "price": "Rp 198.903",
-    "change": "+0.00%",
+    "price": "Rp 199.994",
+    "change": "+3.01% dari Low",
     "volume": "Rp 676 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "pump_idr",
-    "coin": "PUMP/IDR",
-    "price": "Rp 103,928",
-    "change": "+0.00%",
-    "volume": "Rp 674 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "xlm_idr",
-    "coin": "XLM/IDR",
-    "price": "Rp 4.086",
-    "change": "+0.00%",
-    "volume": "Rp 674 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "trollsol_idr",
-    "coin": "TROLLSOL/IDR",
-    "price": "Rp 863,081",
-    "change": "+0.00%",
-    "volume": "Rp 670 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "glidr_idr",
     "coin": "GLIDR/IDR",
-    "price": "Rp 1.061,001",
-    "change": "+0.00%",
-    "volume": "Rp 659 Juta",
+    "price": "Rp 1.061",
+    "change": "+1.05% dari Low",
+    "volume": "Rp 660 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "arb_idr",
     "coin": "ARB/IDR",
     "price": "Rp 3.694",
-    "change": "+0.00%",
-    "volume": "Rp 654 Juta",
+    "change": "+3.21% dari Low",
+    "volume": "Rp 642 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "egld_idr",
-    "coin": "EGLD/IDR",
-    "price": "Rp 84.000",
-    "change": "+0.00%",
-    "volume": "Rp 614 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "drx_idr",
-    "coin": "DRX/IDR",
-    "price": "Rp 34,194",
-    "change": "+0.00%",
-    "volume": "Rp 567 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "moodeng_idr",
     "coin": "MOODENG/IDR",
     "price": "Rp 860",
-    "change": "+0.00%",
+    "change": "+2.99% dari Low",
     "volume": "Rp 535 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "icnt_idr",
-    "coin": "ICNT/IDR",
-    "price": "Rp 2.605",
-    "change": "+0.00%",
-    "volume": "Rp 525 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "xpl_idr",
-    "coin": "XPL/IDR",
-    "price": "Rp 1.764",
-    "change": "+0.00%",
-    "volume": "Rp 480 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "night_idr",
-    "coin": "NIGHT/IDR",
-    "price": "Rp 725",
-    "change": "+0.00%",
-    "volume": "Rp 462 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "lighter_idr",
-    "coin": "LIGHTER/IDR",
-    "price": "Rp 73.999",
-    "change": "+0.00%",
-    "volume": "Rp 454 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "bonk_idr",
-    "coin": "BONK/IDR",
-    "price": "Rp 0,069",
-    "change": "+0.00%",
-    "volume": "Rp 454 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "trx_idr",
     "coin": "TRX/IDR",
     "price": "Rp 6.041",
-    "change": "+0.00%",
-    "volume": "Rp 443 Juta",
+    "change": "+0.82% dari Low",
+    "volume": "Rp 444 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "humanity_idr",
-    "coin": "HUMANITY/IDR",
-    "price": "Rp 1.215",
-    "change": "+0.00%",
-    "volume": "Rp 437 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "avnt_idr",
-    "coin": "AVNT/IDR",
-    "price": "Rp 3.800",
-    "change": "+0.00%",
-    "volume": "Rp 421 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "pha_idr",
-    "coin": "PHA/IDR",
-    "price": "Rp 1.326",
-    "change": "+0.00%",
-    "volume": "Rp 415 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "spx_idr",
-    "coin": "SPX/IDR",
-    "price": "Rp 8.121",
-    "change": "+0.00%",
-    "volume": "Rp 414 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "mon_idr",
-    "coin": "MON/IDR",
-    "price": "Rp 580",
-    "change": "+0.00%",
-    "volume": "Rp 397 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "virtuals_idr",
-    "coin": "VIRTUALS/IDR",
-    "price": "Rp 14.796",
-    "change": "+0.00%",
-    "volume": "Rp 354 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "w3s2_idr",
     "coin": "W3S2/IDR",
-    "price": "Rp 8.127",
-    "change": "+0.00%",
-    "volume": "Rp 343 Juta",
+    "price": "Rp 8.149",
+    "change": "+1.86% dari Low",
+    "volume": "Rp 342 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "pol_idr",
     "coin": "POL/IDR",
     "price": "Rp 2.036",
-    "change": "+0.00%",
+    "change": "+1.80% dari Low",
     "volume": "Rp 337 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "audio_idr",
-    "coin": "AUDIO/IDR",
-    "price": "Rp 315",
-    "change": "+0.00%",
-    "volume": "Rp 318 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "shib_idr",
     "coin": "SHIB/IDR",
     "price": "Rp 0,104",
-    "change": "+0.00%",
-    "volume": "Rp 313 Juta",
+    "change": "+2.34% dari Low",
+    "volume": "Rp 314 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "pond_idr",
-    "coin": "POND/IDR",
-    "price": "Rp 32,99",
-    "change": "+0.00%",
-    "volume": "Rp 301 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "nxa_idr",
-    "coin": "NXA/IDR",
-    "price": "Rp 27.075",
-    "change": "+0.00%",
-    "volume": "Rp 286 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "myx_idr",
-    "coin": "MYX/IDR",
-    "price": "Rp 1.335",
-    "change": "+0.00%",
-    "volume": "Rp 280 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "zro_idr",
-    "coin": "ZRO/IDR",
-    "price": "Rp 30.195",
-    "change": "+0.00%",
-    "volume": "Rp 275 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "unmd_idr",
-    "coin": "UNMD/IDR",
-    "price": "Rp 21",
-    "change": "+0.00%",
-    "volume": "Rp 267 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "cjl_idr",
-    "coin": "CJL/IDR",
-    "price": "Rp 19",
-    "change": "+0.00%",
-    "volume": "Rp 247 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "kta_idr",
-    "coin": "KTA/IDR",
-    "price": "Rp 1.695",
-    "change": "+0.00%",
-    "volume": "Rp 238 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "algo_idr",
-    "coin": "ALGO/IDR",
-    "price": "Rp 2.297",
-    "change": "+0.00%",
-    "volume": "Rp 236 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "mct_idr",
     "coin": "MCT/IDR",
     "price": "Rp 28",
-    "change": "+0.00%",
-    "volume": "Rp 223 Juta",
+    "change": "+0.00% dari Low",
+    "volume": "Rp 224 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "islm_idr",
-    "coin": "ISLM/IDR",
-    "price": "Rp 58",
-    "change": "+0.00%",
-    "volume": "Rp 222 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "fet_idr",
-    "coin": "FET/IDR",
-    "price": "Rp 4.298",
-    "change": "+0.00%",
-    "volume": "Rp 222 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "trump_idr",
-    "coin": "TRUMP/IDR",
-    "price": "Rp 38.304",
-    "change": "+0.00%",
-    "volume": "Rp 213 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "dexe_idr",
-    "coin": "DEXE/IDR",
-    "price": "Rp 34.495",
-    "change": "+0.00%",
-    "volume": "Rp 207 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "show_idr",
     "coin": "SHOW/IDR",
     "price": "Rp 70.515",
-    "change": "+0.00%",
-    "volume": "Rp 205 Juta",
+    "change": "+0.01% dari Low",
+    "volume": "Rp 204 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "velvet_idr",
     "coin": "VELVET/IDR",
-    "price": "Rp 1.010",
-    "change": "+0.00%",
-    "volume": "Rp 202 Juta",
+    "price": "Rp 1.013",
+    "change": "+2.22% dari Low",
+    "volume": "Rp 192 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "wif_idr",
-    "coin": "WIF/IDR",
-    "price": "Rp 4.574",
-    "change": "+0.00%",
-    "volume": "Rp 201 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "uni_idr",
     "coin": "UNI/IDR",
     "price": "Rp 160.099",
-    "change": "+0.00%",
+    "change": "+2.82% dari Low",
     "volume": "Rp 190 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "aave_idr",
-    "coin": "AAVE/IDR",
-    "price": "Rp 2.989.362",
-    "change": "+0.00%",
-    "volume": "Rp 188 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "col_idr",
-    "coin": "COL/IDR",
-    "price": "Rp 3.468",
-    "change": "+0.00%",
-    "volume": "Rp 186 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "tmg_idr",
-    "coin": "TMG/IDR",
-    "price": "Rp 227",
-    "change": "+0.00%",
-    "volume": "Rp 184 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "brett_idr",
-    "coin": "BRETT/IDR",
-    "price": "Rp 113",
-    "change": "+0.00%",
-    "volume": "Rp 182 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "jellyjelly_idr",
     "coin": "JELLYJELLY/IDR",
     "price": "Rp 999,031",
-    "change": "+0.00%",
-    "volume": "Rp 177 Juta",
+    "change": "+0.91% dari Low",
+    "volume": "Rp 175 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "xdc_idr",
-    "coin": "XDC/IDR",
-    "price": "Rp 628",
-    "change": "+0.00%",
-    "volume": "Rp 170 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "bio_idr",
     "coin": "BIO/IDR",
     "price": "Rp 560",
-    "change": "+0.00%",
-    "volume": "Rp 165 Juta",
+    "change": "+2.38% dari Low",
+    "volume": "Rp 162 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "mtc_idr",
-    "coin": "MTC/IDR",
-    "price": "Rp 18",
-    "change": "+0.00%",
-    "volume": "Rp 161 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "xvs_idr",
-    "coin": "XVS/IDR",
-    "price": "Rp 68.044",
-    "change": "+0.00%",
-    "volume": "Rp 160 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "gwei_idr",
-    "coin": "GWEI/IDR",
-    "price": "Rp 397",
-    "change": "+0.00%",
-    "volume": "Rp 157 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "eigen_idr",
-    "coin": "EIGEN/IDR",
-    "price": "Rp 4.501",
-    "change": "+0.00%",
-    "volume": "Rp 153 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "icp_idr",
-    "coin": "ICP/IDR",
-    "price": "Rp 61.408",
-    "change": "+0.00%",
-    "volume": "Rp 145 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "sapien_idr",
-    "coin": "SAPIEN/IDR",
-    "price": "Rp 1.588",
-    "change": "+0.00%",
-    "volume": "Rp 145 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "grt_idr",
-    "coin": "GRT/IDR",
-    "price": "Rp 518",
-    "change": "+0.00%",
-    "volume": "Rp 144 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "onl_idr",
     "coin": "ONL/IDR",
     "price": "Rp 3.215",
-    "change": "+0.00%",
+    "change": "+0.03% dari Low",
     "volume": "Rp 142 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "aura_idr",
     "coin": "AURA/IDR",
     "price": "Rp 158",
-    "change": "+0.00%",
+    "change": "+1.94% dari Low",
     "volume": "Rp 141 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "spaceid_idr",
     "coin": "SPACEID/IDR",
     "price": "Rp 667",
-    "change": "+0.00%",
+    "change": "+1.68% dari Low",
     "volume": "Rp 138 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "zora_idr",
     "coin": "ZORA/IDR",
-    "price": "Rp 144,2",
-    "change": "+0.00%",
-    "volume": "Rp 137 Juta",
+    "price": "Rp 141,724",
+    "change": "+3.42% dari Low",
+    "volume": "Rp 138 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "zerebro_idr",
     "coin": "ZEREBRO/IDR",
     "price": "Rp 567",
-    "change": "+0.00%",
+    "change": "+2.16% dari Low",
     "volume": "Rp 137 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "morpho_idr",
-    "coin": "MORPHO/IDR",
-    "price": "Rp 46.198",
-    "change": "+0.00%",
-    "volume": "Rp 128 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "nrg_idr",
-    "coin": "NRG/IDR",
-    "price": "Rp 150",
-    "change": "+0.00%",
-    "volume": "Rp 128 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "nmr_idr",
-    "coin": "NMR/IDR",
-    "price": "Rp 209.839",
-    "change": "+0.00%",
-    "volume": "Rp 123 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "dot_idr",
-    "coin": "DOT/IDR",
-    "price": "Rp 22.206",
-    "change": "+0.00%",
-    "volume": "Rp 122 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "meta_idr",
     "coin": "META/IDR",
     "price": "Rp 148",
-    "change": "+0.00%",
+    "change": "+2.07% dari Low",
     "volume": "Rp 120 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "ub_idr",
     "coin": "UB/IDR",
     "price": "Rp 2.593",
-    "change": "+0.00%",
+    "change": "+1.45% dari Low",
     "volume": "Rp 120 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "vet_idr",
-    "coin": "VET/IDR",
-    "price": "Rp 163",
-    "change": "+0.00%",
-    "volume": "Rp 119 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "somi_idr",
-    "coin": "SOMI/IDR",
-    "price": "Rp 3.941",
-    "change": "+0.00%",
-    "volume": "Rp 117 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "aixbt_idr",
-    "coin": "AIXBT/IDR",
-    "price": "Rp 420",
-    "change": "+0.00%",
-    "volume": "Rp 116 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "dfg_idr",
     "coin": "DFG/IDR",
-    "price": "Rp 13.722",
-    "change": "+0.00%",
+    "price": "Rp 13.732",
+    "change": "+3.16% dari Low",
     "volume": "Rp 114 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "w3f_idr",
-    "coin": "W3F/IDR",
-    "price": "Rp 23.710",
-    "change": "+0.00%",
-    "volume": "Rp 113 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "vanry_idr",
-    "coin": "VANRY/IDR",
-    "price": "Rp 57",
-    "change": "+0.00%",
-    "volume": "Rp 112 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "grass_idr",
-    "coin": "GRASS/IDR",
-    "price": "Rp 12.664",
-    "change": "+0.00%",
-    "volume": "Rp 110 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "gtc_idr",
-    "coin": "GTC/IDR",
-    "price": "Rp 1.693",
-    "change": "+0.00%",
-    "volume": "Rp 110 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "ban_idr",
-    "coin": "BAN/IDR",
-    "price": "Rp 1.154",
-    "change": "+0.00%",
-    "volume": "Rp 108 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "gravity_idr",
     "coin": "GRAVITY/IDR",
     "price": "Rp 86",
-    "change": "+0.00%",
+    "change": "+2.38% dari Low",
     "volume": "Rp 108 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "gns_idr",
-    "coin": "GNS/IDR",
-    "price": "Rp 8.610",
-    "change": "+0.00%",
-    "volume": "Rp 108 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "floki_idr",
-    "coin": "FLOKI/IDR",
-    "price": "Rp 0,504",
-    "change": "+0.00%",
-    "volume": "Rp 106 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "river_idr",
-    "coin": "RIVER/IDR",
-    "price": "Rp 22.180",
-    "change": "+0.00%",
-    "volume": "Rp 105 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "ucjl_idr",
-    "coin": "UCJL/IDR",
-    "price": "Rp 3.010",
-    "change": "+0.00%",
-    "volume": "Rp 102 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
-  },
-  {
-    "id": "cgpt_idr",
-    "coin": "CGPT/IDR",
-    "price": "Rp 402",
-    "change": "+0.00%",
-    "volume": "Rp 101 Juta",
-    "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   },
   {
     "id": "hart_idr",
     "coin": "HART/IDR",
     "price": "Rp 45",
-    "change": "+0.00%",
+    "change": "+0.00% dari Low",
     "volume": "Rp 100 Juta",
     "status": "SIAP_BELI",
-    "message": "Bandar terdeteksi akumulasi diam-diam di harga murah!",
-    "timestamp": "12.01.19"
+    "message": "Harga masih dekat dengan terendah harian (Low) dengan volume aktif!",
+    "timestamp": "12.04.54"
   }
 ]
