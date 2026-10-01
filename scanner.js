@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 
-// Format nominal Rupiah agar enak dibaca (Juta / Miliar)
+// Format nominal Rupiah ke tampilan rapi (Juta / Miliar)
 function formatRupiah(amount) {
   if (amount >= 1000000000) {
     return `Rp ${(amount / 1000000000).toFixed(2)} Miliar`;
@@ -12,11 +12,21 @@ function formatRupiah(amount) {
 async function scanPair(pair, tickerData) {
   const coinName = pair.replace('_idr', '').toUpperCase();
   const lastPrice = parseFloat(tickerData.last);
+  const lowPrice = parseFloat(tickerData.low);
   const total24hVol = parseFloat(tickerData.vol_idr);
 
+  // 1. FILTER HARGA MURAH (Pre-Pump Zone)
+  let priceChangeFromLow = 0;
+  if (lowPrice > 0) {
+    priceChangeFromLow = ((lastPrice - lowPrice) / lowPrice) * 100;
+  }
+
+  // Abaikan koin yang sudah naik lebih dari +2.5% dari harga terendah harian
+  if (priceChangeFromLow > 2.5) return null;
+
   try {
-    // Ambil 30 transaksi terbaru untuk analisis mendalam
-    const response = await axios.get(`https://indodax.com/api/trades/${pair}`, { timeout: 4000 });
+    // Mengambil hingga 1000 transaksi terbaru untuk analisis mendalam & luas
+    const response = await axios.get(`https://indodax.com/api/trades/${pair}`, { timeout: 10000 });
     const trades = response.data;
 
     if (!Array.isArray(trades) || trades.length === 0) return null;
@@ -26,7 +36,8 @@ async function scanPair(pair, tickerData) {
     let buyCount = 0;
     let latestBuyTimestamp = null;
 
-    for (let trade of trades.slice(0, 25)) {
+    // Evaluasi seluruh riwayat transaksi BUY yang dikembalikan API (hingga 1000 transaksi)
+    for (let trade of trades) {
       if (trade.type === 'buy') {
         const price = parseFloat(trade.price);
         const amount = parseFloat(trade.amount);
@@ -42,9 +53,9 @@ async function scanPair(pair, tickerData) {
       }
     }
 
-    // PARAMETER SENSITIVITAS & AKURASI PAUS
-    const THRESHOLD_SINGLE_BUY = 15000000; // Minimal 1x Instant Buy Rp 15 Juta
-    const THRESHOLD_ACCUMULATION = 25000000; // Minimal Total Serok Rp 25 Juta
+    // PARAMETER DETEKSI AKUMULASI BANDAR
+    const THRESHOLD_SINGLE_BUY = 5000000;    // Order Beli Instan minimal Rp 5 Juta
+    const THRESHOLD_ACCUMULATION = 10000000; // Total Serok Kumulatif minimal Rp 10 Juta
 
     const isInstantWhale = maxSingleBuyVal >= THRESHOLD_SINGLE_BUY;
     const isAccumulationWhale = totalRecentBuyVal >= THRESHOLD_ACCUMULATION && buyCount >= 2;
@@ -54,66 +65,54 @@ async function scanPair(pair, tickerData) {
         ? new Date(latestBuyTimestamp).toLocaleTimeString('id-ID', { timeZone: 'Asia/Jakarta' })
         : new Date().toLocaleTimeString('id-ID', { timeZone: 'Asia/Jakarta' });
 
-      let signalType = '';
-      let message = '';
-      let triggerVal = 0;
-
-      if (isInstantWhale && maxSingleBuyVal >= totalRecentBuyVal * 0.7) {
-        signalType = 'WHALE_INSTANT_BUY';
-        triggerVal = maxSingleBuyVal;
-        message = `Paus melakukan Market BUY instan sebesar ${formatRupiah(maxSingleBuyVal)}!`;
-      } else {
-        signalType = 'WHALE_SEROK';
-        triggerVal = totalRecentBuyVal;
-        message = `Terdeteksi akumulasi serok halus total ${formatRupiah(totalRecentBuyVal)} (${buyCount} transaksi buy)!`;
-      }
+      let triggerVal = isInstantWhale ? maxSingleBuyVal : totalRecentBuyVal;
+      let message = isInstantWhale
+        ? `Eksekusi Market BUY instan sebesar ${formatRupiah(maxSingleBuyVal)} terdeteksi!`
+        : `Terdeteksi akumulasi serok total ${formatRupiah(totalRecentBuyVal)} (${buyCount} order buy)!`;
 
       return {
         id: pair,
         coin: `${coinName}/IDR`,
         price: `Rp ${lastPrice.toLocaleString('id-ID')}`,
-        change: `${formatRupiah(triggerVal)}`,
+        change: `+${priceChangeFromLow.toFixed(2)}% dari Low`,
         volume: formatRupiah(total24hVol),
         rawTriggerVal: triggerVal,
         status: 'WHALE_BUY',
-        message: message,
+        message: `${message} (Harga masih murah: +${priceChangeFromLow.toFixed(1)}% dari Low)`,
         timestamp: timeString
       };
     }
   } catch (err) {
-    // Abaikan jika terjadi timeout/rate limit ringan pada koin tertentu
     return null;
   }
   return null;
 }
 
 async function startScan() {
-  console.log('Memulai Pemindaian Paus Indodax Akurat...');
+  console.log('Memulai Pemindaian Mendalam Akumulasi Paus (Sampel Maksimal)...');
 
   try {
-    const summaryRes = await axios.get('https://indodax.com/api/summaries', { timeout: 6000 });
+    const summaryRes = await axios.get('https://indodax.com/api/summaries', { timeout: 12000 });
     const tickers = summaryRes.data.tickers;
 
-    // Filter koin valid (Bukan stablecoin & Volume 24j harian min Rp 100 Juta)
+    // Filter koin valid (Bukan stablecoin USDT/USDC, Volume 24h min Rp 30 Juta)
     const ignored = ['USDT', 'USDC'];
     const validPairs = Object.keys(tickers).filter(pair => {
       const coinName = pair.replace('_idr', '').toUpperCase();
       const vol24h = parseFloat(tickers[pair].vol_idr);
-      return pair.endsWith('_idr') && !ignored.includes(coinName) && vol24h >= 100000000;
+      return pair.endsWith('_idr') && !ignored.includes(coinName) && vol24h >= 30000000;
     });
 
-    // Jalankan pemindaian secara paralel (eksekusi cepat agar data akurat)
     const scanPromises = validPairs.map(pair => scanPair(pair, tickers[pair]));
     const results = await Promise.all(scanPromises);
 
-    // Filter hasil null dan urutkan dari transaksi paus terbesar
     const detectedSignals = results
       .filter(item => item !== null)
       .sort((a, b) => b.rawTriggerVal - a.rawTriggerVal)
       .map(({ rawTriggerVal, ...rest }) => rest);
 
     fs.writeFileSync('signals.json', JSON.stringify(detectedSignals, null, 2));
-    console.log(`Pemindaian selesai! Sinyal paus terkonfirmasi: ${detectedSignals.length}`);
+    console.log(`Pemindaian selesai! Koin terkonfirmasi: ${detectedSignals.length}`);
   } catch (error) {
     console.error('Gagal menjalankan pemindai:', error.message);
   }
